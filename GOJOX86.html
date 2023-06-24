@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        
+   
+    /* Style for the footer */
+    footer {
+        text-align: center;
+        font-size: 14px;
+        color: #888;
+        margin-top: 20px;
+    }
+    </style>
+</head>
+<head>
+  <title>MY creations</title>
+  <div class="video-grid">
+    <div class="video-item">
+      <div class="video-wrap">
+        <iframe src="edit4.mp4"muted width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="video-item">
+      <div class="video-wrap">
+        <iframe src="edit1.mp4></iframe>
+      </div>
+    </div>
+    <div class="video-item">
+      <div class="video-wrap">
+        <iframe src="edit5" width="100" height="100" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+ <style>
+  * + * {
+    margin-top: 1.5em;
+  }
+  
+  body {
+    background-color: rgba(255, 140, 0, 0.08);
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 1.7;
+  }
+  
+  
+  
+  .video-item {
+    overflow: hidden;
+  }
+  
+  .video-wrap {
+    position: relative;
+    padding-bottom: 56.25%;
+  }
+  
+  .video-item iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+  }
+  
+  .video-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    height: 270px;
+    width: 480px;
+  }
+  
+  @supports (display: grid) {
+  
+    .video-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      margin: 0 -2em;
+    }
+    
+    .video-item {
+      margin-top: 0;
+    }
+    
+    .video-item iframe {
+      border: 0.125rem solid transparent;
+    }
+  
+    .video-item:nth-child(1) {
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+    }
+  
+    .video-item:nth-child(2) {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+  
+    .video-item:nth-child(3) {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+    
+    .video-item:nth-last-child(-n+1):first-child,
+    .video-item:nth-last-child(-n+1):first-child ~ .video-item {
+      grid-column: 1 / 3;
+      grid-row: 1 / 3;
+    }
+  }
+  h1{
+    font-size: clamp(40px,80px,105px);
+  }
+    body {
+        background-color: rgb(207, 221, 233);
+      }
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start; /* Align video containers to the left */
+      }
+      
+      .video-container {
+        flex: 0 0 calc(33.33% - 4px); /* Adjust the width of each video container as per your requirement */
+       
+        overflow: hidden;
+        margin-right: 10px; /* Add a small margin to create spacing between video containers */
+        margin-bottom: 4px; /* Add a small margin to create spacing between rows */
+        box-sizing: border-box; /* Include border and margin in the element's total width */
+      }
+      
+      .video-container:last-child {
+        margin-right: 0; /* Remove the margin on the last video container in each row */
+      }
+      
+      .video-container video {
+        width: 100%;
+        height: auto;
+      }
+      
+      
+      .video-container {
+        flex: 0 0 calc(33.33% - 20px); /* Adjust the width of each video container and the gap */
+       
+        overflow: hidden;
+        transition: transform 0.3s ease; /* Add transition effect */
+      }
+      
+      
+      
+      .video-container video {
+        width: 100%;
+        height: auto;
+      }
+      
+      
+        transform: scale(1);{
+        transition: transform 0.3s;
+        cursor: pointer;
+      }
+      
+      .gallery video {
+        margin: 0; /* Remove the default margin on videos */
+      }
+      .video-container video:hover {
+        transform: scale(1.1);
+      }
+      
+      .video-container video.playing {
+        filter: brightness(70%);
+        z-index: 1;
+      }
+      .video-player {
+        position: relative;
+        max-width: 800px; /* Adjust as needed */
+        max-height: 600px; /* Adjust as needed */
+        width: 100%;
+        height: 0;
+        padding-bottom: 50%; /* 16:9 aspect ratio for landscape videos */
+        overflow: hidden;
+      }
+      
+      .video-player video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transition: transform 0.5s ease;
+      }
+      
+      .video-player:hover video {
+        transform: scale(1.1);
+      }
+      .video-size-slider {
+        margin-top: 10px;
+      }
+      #video1 video {
+        
+        top: 500px;
+        width: 39%; 
+        height: 0%;
+      }
+      #video2 video {
+        
+        top: 500px;
+        width: 39%; 
+        height: 0%;
+      }
+      #video3 video {
+        
+        top: 500px;
+        width: 39%; 
+        height: 0%;
+      }
+      #video4 video {
+        
+        top: 500px;
+        width: 39%; 
+        height: 0%;
+      }
+      #video4 video {
+        
+        top: 500px;
+        width: 39%; 
+        height: 0%;
+      }
+      #video5 video {
+        
+        top: 500px;
+        width: 39%; 
+        height: 0%;
+      }
+      #video6 video {
+        
+        top: 500px;
+        width: 39%; 
+        height: 0%;
+      }
+      #video7 video {
+        
+        top: 500px;
+        width: 39%; 
+        height: 0%;
+      }
+
+            .video-size-slider {
+                margin-top: 10px;
+              }
+              
+              .video-size-slider::-webkit-slider-thumb {
+                appearance: none;
+                width: 15px;
+                height: 15px;
+                background-color: #888;
+                cursor: pointer;
+              }
+              
+              .video-size-slider::-moz-range-thumb {
+                width: 15px;
+                height: 15px;
+                background-color: #888;
+                cursor: pointer;
+              }
+              
+              .video-size-slider::-webkit-slider-thumb:hover,
+              .video-size-slider::-moz-range-thumb:hover {
+                background-color: #555;
+              }
+              body{
+                text-align: center;
+                background: #f0f0f5;
+              }
+              
+             
+              
+              h2{
+                font-family: league system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 40px;
+                 animation: Color 4s linear infinite;
+                -webkit-animation: Color 4s ease-in-out infinite;
+                text-shadow: 10px 10px #F0F0F0;
+              }
+              
+              @keyframes Color{
+                0%{
+                  color:#A0D468;
+                }
+                
+                20%{
+                  color:#4FC1E9;
+                }
+                
+                40%{
+                  color:#FFCE54;
+                }
+                
+                60%{
+                  color:#FC6E51;
+                }
+                
+                80%{
+                  color:#ED5565;
+                }
+                
+                100%{
+                  color:#AC92EC;
+                }
+              }
+              
+              @-moz-keyframes Color{
+                0%{
+                  color:#A0D468;
+                }
+                
+                20%{
+                  color:#4FC1E9;
+                }
+                
+                40%{
+                  color:#FFCE54;
+                }
+                
+                60%{
+                  color:#FC6E51;
+                }
+                
+                80%{
+                  color:#ED5565;
+                }
+                
+                100%{
+                  color:#AC92EC;
+                }
+              }
+              
+              @-webkit-keyframes Color{
+                0%{
+                  color:#A0D468;
+                }
+                
+                20%{
+                  color:#4FC1E9;
+                }
+                
+                40%{
+                  color:#FFCE54;
+                }
+                
+                60%{
+                  color:#FC6E51;
+                }
+                
+                80%{
+                  color:#ED5565;
+                }
+                
+                100%{
+                  color:#AC92EC;
+                }
+              }
+              
+ </style>
+</head>
+<body>
+  <div>
+
+    <h2><b><i>PAGE CREATED BY SAN DESH (GOJOX86)</i></b></h2>
+        </div>
+  
+  <footer>
+     <b>Page will be ready soon</b> 
+  </footer>
+</body>
+<body>
+    <div class="gallery">
+        <div class="video-container">
+          <video src="edit1.mp4" muted></video>
+          <div class="video-player"></div>
+        </div>
+        <div class="video-container">
+          <video src="edit2.mp4" muted></video>
+          <div class="video-player"></div>
+        </div>
+        <div class="video-container">
+          <video src="edit3.mp4" muted></video>
+          <div class="video-player"></div>
+        </div>
+         
+      </div>
+      <div class="video-container">
+      
+            <video src="edit5.mp4" muted></video>
+            <div class="video-player"></div>
+       </div>
+       <div class="video-container">
+        
+        <video src="edit6.mp4" muted></video>
+        <div class="video-player"></div>
+       </div>
+       <div class="video-container">
+  
+        <video src="edit7.mp4" muted></video>
+        <div class="video-player"></div>
+       </div>
+       <div class="video-container">
+      
+        <video src="edit8.mp4" muted></video>
+        <div class="video-player"></div>
+       </div>
+       <div class="video-container">
+       
+        <video src="edit9.mp4" muted></video>
+        <div class="video-player"></div>
+       </div>
+       <div class="video-container">
+       
+        <video src="edit10.mp4" muted></video>
+        <div class="video-player"></div>
+       </div>
+       <div class="video-container">
+
+        <video src="edit11.mp4" muted></video>
+        <div class="video-player"></div>
+        
+  
+       </div>
+      
+    <script>
+      
+       const videoContainers = document.querySelectorAll('.video-container');
+
+       videoContainers.forEach(container => {
+         const video = container.querySelector('video');
+         const videoPlayer = container.querySelector('.video-player');
+         let isPlaying = false;
+       
+         container.addEventListener('mouseenter', () => {
+           if (isPlaying) return;
+           video.muted = true;
+           video.play();
+           video.classList.add('playing');
+         });
+       
+         container.addEventListener('mouseleave', () => {
+           if (isPlaying) return;
+           video.pause();
+           video.currentTime = 0;
+           video.classList.remove('playing');
+         });
+       
+         container.addEventListener('click', () => {
+           if (isPlaying) {
+             video.pause();
+             video.currentTime = 0;
+             video.classList.remove('playing');
+             isPlaying = false;
+           } else {
+             video.muted = false;
+             video.play();
+             video.classList.add('playing');
+             isPlaying = true;
+           }
+         });
+       
+         video.addEventListener('ended', () => {
+           video.pause();
+           video.currentTime = 0;
+           video.classList.remove('playing');
+           isPlaying = false;
+         });
+       
+         videoPlayer.addEventListener('click', () => {
+           if (isPlaying) {
+             video.pause();
+             video.currentTime = 0;
+             video.classList.remove('playing');
+             isPlaying = false;
+           } else {
+             video.play();
+             video.classList.add('playing');
+             isPlaying = true;
+           }
+         });
+       });
+       // script.js
+
+const videoPlayer = document.querySelector('.video-player');
+const videoSizeSlider = document.querySelector('.video-size-slider');
+
+videoSizeSlider.addEventListener('input', function() {
+  const scale = this.value;
+  videoPlayer.style.transform = `scale(${scale})`;
+});
+
+</script>       
+</body>
+</html>
